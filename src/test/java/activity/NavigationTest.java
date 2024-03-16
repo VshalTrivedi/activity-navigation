@@ -29,7 +29,8 @@ public class NavigationTest {
     @AfterMethod
     public void afterMethod() {
 
-        // close and quit the browser
+//Sont
+    	// close and quit the browser
         driver.quit();
     }
 }
