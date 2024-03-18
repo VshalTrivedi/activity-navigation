@@ -24,7 +24,7 @@ public class NavigationTest {
         // navigate to the web site
         driver.get("http://navihedge-fe.s3-website-ap-southeast-2.amazonaws.com/Client");
         // Validate page title
-        Assert.assertEquals(driver.getTitle(), "Navihedge");
+        Assert.assertEquals(driver.getTitle(), "NaviHedge");
     }
     @AfterMethod
     public void afterMethod() {
