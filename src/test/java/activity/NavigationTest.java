@@ -1,3 +1,4 @@
+
 package activity;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -24,7 +25,7 @@ public class NavigationTest {
         // navigate to the web site
         driver.get("http://navihedge-fe.s3-website-ap-southeast-2.amazonaws.com/Client");
         // Validate page title
-        Assert.assertEquals(driver.getTitle(), "Navi1Hedge");
+        Assert.assertEquals(driver.getTitle(), "NaviHedge");
     }
     @AfterMethod
     public void afterMethod() {
