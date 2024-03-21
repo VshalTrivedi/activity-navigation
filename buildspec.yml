@@ -9,9 +9,8 @@ phases:
     
      # Download Google Chrome binary
       - wget -q -O chrome.tar.gz https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-
-      # Extract Chrome binary
-      - tar -xzf chrome.tar.gz
+	  - dpkg -i chrome.deb
+      - apt-get -f install
       - echo "Installing dependencies..."
       - mvn clean install -DskipTests=true
   build:
