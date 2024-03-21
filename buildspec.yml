@@ -6,13 +6,12 @@ phases:
       java: corretto21
     commands:
       # Install required dependencies
-      - sudo apt-get update
-      - sudo apt-get install -y wget
+      - sudo yum update -y
+      - sudo yum install -y wget
 
       # Download and install Google Chrome
-      - wget -q -O chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-      - sudo dpkg -i chrome.deb
-      - sudo apt-get -f install    
+      - wget -q -O chrome.rpm https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+      - sudo yum localinstall -y chrome.rpm   
       - echo "Installing dependencies..."
       - mvn clean install -DskipTests=true
   build:
