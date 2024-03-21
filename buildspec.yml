@@ -7,12 +7,11 @@ phases:
   pre_build:
    commands:
     
-     # Download Google Chrome package
-      - wget -q -O chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+     # Download Google Chrome binary
+      - wget -q -O chrome.tar.gz https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
-      # Install Google Chrome
-      - sudo dpkg -i chrome.deb
-      - sudo apt-get -f install  # Install any missing dependencies
+      # Extract Chrome binary
+      - tar -xzf chrome.tar.gz
       - echo "Installing dependencies..."
       - mvn clean install -DskipTests=true
   build:
