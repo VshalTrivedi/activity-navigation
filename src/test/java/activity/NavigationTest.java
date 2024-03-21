@@ -1,9 +1,9 @@
 package activity;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 //import org.openqa.selenium.firefox.GeckoDriverInfo;
 import org.testng.Assert;
 import org.testng.annotations.*;
+import org.openqa.selenium.WebDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class NavigationTest {
@@ -22,11 +22,11 @@ public class NavigationTest {
 
 		
 		 // initialize new WebDriver session 
-		 WebDriverManager.chromedriver().setup();
-		 driver = new ChromeDriver();
-		 
-        
-		
+			/*
+			 * WebDriverManager.chromedriver().setup(); driver = new ChromeDriver();
+			 */
+    	WebDriverManager.firefoxdriver().setup(); 
+    	driver = new FirefoxDriver();		
         
     }
 
