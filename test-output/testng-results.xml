@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-17T18:57:30 IST" name="Default suite" finished-at="2024-03-17T18:57:39 IST" duration-ms="8559">
+  <suite started-at="2024-03-21T11:46:06 IST" name="Default suite" finished-at="2024-03-21T11:46:15 IST" duration-ms="9213">
     <groups>
     </groups>
-    <test started-at="2024-03-17T18:57:30 IST" name="Default test" finished-at="2024-03-17T18:57:39 IST" duration-ms="8559">
+    <test started-at="2024-03-21T11:46:06 IST" name="Default test" finished-at="2024-03-21T11:46:15 IST" duration-ms="9213">
       <class name="activity.NavigationTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:activity.NavigationTest@8f4ea7c]" started-at="2024-03-17T18:57:30 IST" name="beforeMethod" finished-at="2024-03-17T18:57:31 IST" duration-ms="1035" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:activity.NavigationTest@8f4ea7c]" started-at="2024-03-21T11:46:06 IST" name="beforeMethod" finished-at="2024-03-21T11:46:07 IST" duration-ms="1466" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="navigateToAUrl()[pri:0, instance:activity.NavigationTest@8f4ea7c]" started-at="2024-03-17T18:57:31 IST" name="navigateToAUrl" finished-at="2024-03-17T18:57:38 IST" duration-ms="7392" status="PASS">
+        <test-method signature="navigateToAUrl()[pri:0, instance:activity.NavigationTest@8f4ea7c]" started-at="2024-03-21T11:46:07 IST" name="navigateToAUrl" finished-at="2024-03-21T11:46:15 IST" duration-ms="7620" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToAUrl -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:activity.NavigationTest@8f4ea7c]" started-at="2024-03-17T18:57:38 IST" name="afterMethod" finished-at="2024-03-17T18:57:39 IST" duration-ms="107" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:activity.NavigationTest@8f4ea7c]" started-at="2024-03-21T11:46:15 IST" name="afterMethod" finished-at="2024-03-21T11:46:15 IST" duration-ms="100" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
