@@ -3,14 +3,8 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      java: corretto11
+      java: corretto21
     commands:
-      - apt-get update -y
-      - apt-get install wget
-      - curl -sS -o - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add
-      - echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
-      - apt-get -y update
-      - apt-get -y install google-chrome-stable
       - echo "Installing dependencies..."
       - mvn clean install -DskipTests=true
   build:
