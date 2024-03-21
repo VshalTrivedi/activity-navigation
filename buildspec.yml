@@ -6,16 +6,17 @@ phases:
       java: corretto21
   pre_build:
    commands:
-      # Install required dependencies
-      - sudo apt update
-      - sudo apt install -y wget
+    
+      - apt-get update -y
+      - apt-get install -y wget
 
-      # Download Google Chrome package
-      - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    
+      - curl -$S -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add
+      - echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
 
-      # Install Google Chrome
-      - sudo dpkg -i google-chrome-stable_current_amd64.deb
-      - sudo apt-get -f install  # Install any missing dependencies
+    
+      - apt-get -y update
+      - apt-get -y install google-chrome-stable
       - echo "Installing dependencies..."
       - mvn clean install -DskipTests=true
   build:
