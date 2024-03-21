@@ -8,10 +8,7 @@ phases:
       # Install required dependencies
       - sudo yum update -y
       - sudo yum install -y wget
-
-      # Download and install Google Chrome
-      - wget -q -O chrome.rpm https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
-      - sudo yum localinstall -y chrome.rpm   
+      - sudo yum install -y firefox  
       - echo "Installing dependencies..."
       - mvn clean install -DskipTests=true
   build:
