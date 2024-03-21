@@ -7,12 +7,12 @@ phases:
   pre_build:
    commands:
     
-      - sudo apt-get update -y
-      - apt-get install wget
-      - curl -sS -o - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add
-      - echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
-      - apt-get -y update
-      - apt-get -y install google-chrome-stable
+     # Download Google Chrome package
+      - wget -q -O chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+      # Install Google Chrome
+      - sudo dpkg -i chrome.deb
+      - sudo apt-get -f install  # Install any missing dependencies
       - echo "Installing dependencies..."
       - mvn clean install -DskipTests=true
   build:
