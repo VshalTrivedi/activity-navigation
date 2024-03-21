@@ -4,6 +4,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 //import org.openqa.selenium.firefox.GeckoDriverInfo;
 import org.testng.Assert;
 import org.testng.annotations.*;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class NavigationTest {
 
@@ -13,11 +14,14 @@ public class NavigationTest {
     public void beforeMethod() {
 
         // set path of Chromedriver executable
-       System.setProperty("webdriver.chrome.driver",
-               "./src/test/resources/drivers/chromedriver/");
+		/*
+		 * System.setProperty("webdriver.chrome.driver",
+		 * "./src/test/resources/drivers/chromedriver/");
+		 */
 
        // initialize new WebDriver session
-        driver = new ChromeDriver();
+        WebDriverManager.chromedriver().setup();
+    	driver = new ChromeDriver();
         
 		/*
 		 * System.setProperty("webdriver.gecko.driver",
