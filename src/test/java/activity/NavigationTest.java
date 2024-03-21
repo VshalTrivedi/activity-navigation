@@ -14,19 +14,17 @@ public class NavigationTest {
     public void beforeMethod() {
 
         // set path of Chromedriver executable
-		/*
-		 * System.setProperty("webdriver.chrome.driver",
-		 * "./src/test/resources/drivers/chromedriver/");
-		 */
+		
+		  System.setProperty("webdriver.chrome.driver",
+		  "./src/test/resources/drivers/chromedriver/");
+		 driver = new ChromeDriver();
 
-       // initialize new WebDriver session
-        WebDriverManager.chromedriver().setup();
-    	driver = new ChromeDriver();
-        
 		/*
-		 * System.setProperty("webdriver.gecko.driver",
-		 * "./src/test/resources/drivers/chromedriver/"); driver = new GeckoDriver();
+		 * // initialize new WebDriver session WebDriverManager.chromedriver().setup();
+		 driver = new ChromeDriver();
 		 */
+        
+		
         
     }
 
