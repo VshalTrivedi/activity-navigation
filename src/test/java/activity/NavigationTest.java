@@ -1,5 +1,5 @@
 package activity;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 //import org.openqa.selenium.firefox.GeckoDriverInfo;
 import org.testng.Assert;
 import org.testng.annotations.*;
@@ -19,14 +19,10 @@ public class NavigationTest {
 		 * System.setProperty("webdriver.chrome.driver",
 		 * "./src/test/resources/drivers/chromedriver/"); driver = new ChromeDriver();
 		 */
-
-		
-		 // initialize new WebDriver session 
-			/*
-			 * WebDriverManager.chromedriver().setup(); driver = new ChromeDriver();
-			 */
-    	WebDriverManager.firefoxdriver().setup(); 
-    	driver = new FirefoxDriver();		
+			
+			  WebDriverManager.chromedriver().setup(); 
+			  driver = new ChromeDriver();
+			 		
         
     }
 
