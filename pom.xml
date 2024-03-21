@@ -8,26 +8,6 @@
 	<name>Activity-Navigation</name>
 	<!-- FIXME change it to the project's website -->
 	
-	<profiles>
-    <profile>
-        <id>skip-tests</id>
-        <build>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-surefire-plugin</artifactId>
-                    <configuration>
-                        <skipTests>true</skipTests>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </build>
-    </profile>
-</profiles>
-	
-	
-	
-	
 	<dependencies>
 <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 <dependency>

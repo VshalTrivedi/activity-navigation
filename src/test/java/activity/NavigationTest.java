@@ -14,7 +14,7 @@ public class NavigationTest {
 
         // set path of Chromedriver executable
         System.setProperty("webdriver.chrome.driver",
-                "./src/test/resources/drivers/chromedriver/");
+                "./src/test/resources/drivers/chromedriver/chromedriver");
 
         // initialize new WebDriver session
         driver = new ChromeDriver();
