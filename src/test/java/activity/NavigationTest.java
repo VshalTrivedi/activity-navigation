@@ -1,5 +1,6 @@
 package activity;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 //import org.openqa.selenium.firefox.GeckoDriverInfo;
 import org.testng.Assert;
 import org.testng.annotations.*;
@@ -15,13 +16,16 @@ public class NavigationTest {
 
         // set path of Chromedriver executable
 		
-		/*
-		 * System.setProperty("webdriver.chrome.driver",
-		 * "./src/test/resources/drivers/chromedriver/"); driver = new ChromeDriver();
-		 */
+		System.setProperty("webdriver.chrome.driver",
+		  "./src/test/resources/drivers/chromedriver/"); 
+		ChromeOptions options = new ChromeOptions();
+		driver = new ChromeDriver(options);
+		 
 			
-			  WebDriverManager.chromedriver().setup(); 
-			  driver = new ChromeDriver();
+    	
+		/*
+		 * WebDriverManager.chromedriver().setup(); driver = new ChromeDriver();
+		 */
 			 		
         
     }
